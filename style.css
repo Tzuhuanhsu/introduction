@@ -42,7 +42,10 @@ p {
 .resume {
   position: relative;
   max-width: 1300px;
-  /* display: flex; */
+  display: flex;
+  /* 啟用 flexbox */
+  flex-wrap: wrap;
+  /* 允許換行 */
   padding: 50px;
   border: solid 5px rgba(255, 255, 255, 0.65);
 }
@@ -51,6 +54,25 @@ p {
   /*   display:flex; */
   padding: 20px 40px 0 20px;
   flex: 5;
+}
+
+/* 個人照片基本樣式 */
+.profile-img {
+  width: 200px;
+  height: 220px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* 技能圖標樣式 */
+.skill-icon {
+  width: 70px;
+  height: 80px;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .btn {
@@ -173,43 +195,42 @@ p {
   overflow: hidden;
 }
 
-.v50 {
+/* 技能條樣式 */
+.value {
+  height: 15px;
+  background-color: #e3a790;
+}
+
+/* 技能條數值樣式 */
+.value.v50 {
   width: 50%;
-  height: 15px;
-  background-color: #e3a790;
 }
 
-.v60 {
+.value.v60 {
   width: 60%;
-  height: 15px;
-  background-color: #e3a790;
 }
 
-.v70 {
+.value.v70 {
   width: 70%;
-  height: 15px;
-  background-color: #e3a790;
 }
 
-.v80 {
+.value.v80 {
   width: 80%;
-  height: 15px;
-  background-color: #e3a790;
 }
 
 .center {
-    text-align: left;
-    padding: 0 0 0 20px;
-    flex: 6;
-    /* border-left: solid 1px #ffe65b; */
-    margin-right: 20px;
-  }
-  
+  text-align: left;
+  padding: 20px 20px 0 20px;
+  flex: 4;
+  border-left: solid 1px #ffe65b;
+  margin-right: 20px;
+}
+
 .right {
-  /* text-align: left; */
-  padding: 0 0 0 20px;
-  flex: 6;
-  /* border-left: solid 1px #ffe65b; */
+  text-align: left;
+  padding: 20px 20px 0 20px;
+  flex: 4;
+  border-left: solid 1px #ffe65b;
 }
 
 
@@ -217,7 +238,7 @@ p {
 .decoration {
   position: relative;
   width: 180px;
-  height: 160px; 
+  height: 160px;
 }
 
 ul {
@@ -233,7 +254,7 @@ ul {
   margin: 10px 0 15px 0px;
 }
 
-.listExperience > li ul {
+.listExperience>li ul {
   width: 200px;
   flex: 7;
   padding: 5px 5px 5px 20px;
@@ -241,14 +262,160 @@ ul {
   margin-left: 20px;
 }
 
-.listExperience > li:nth-child(1) ul {
+.listExperience>li:nth-child(1) ul {
   border-color: #ffe65b;
 }
 
-.listExperience > li:nth-child(2) ul {
+.listExperience>li:nth-child(2) ul {
   border-color: #fff0a1;
 }
 
-.listExperience > li:nth-child(3) ul {
+.listExperience>li:nth-child(3) ul {
   border-color: #fff6c4;
+}
+
+/* 響應式設計 - 媒體查詢 */
+/* 平板電腦 (768px 以下) */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .resume {
+    flex-direction: column;
+    padding: 30px 20px;
+    border: solid 3px rgba(255, 255, 255, 0.65);
+  }
+
+  .left,
+  .center,
+  .right {
+    flex: 1;
+    padding: 20px 0;
+    margin-right: 0;
+  }
+
+  .center {
+    padding: 20px 0;
+    border-left: none;
+    border-top: solid 1px #ffe65b;
+    margin-top: 20px;
+  }
+
+  .right {
+    padding: 20px 0;
+    border-left: none;
+    border-top: solid 1px #ffe65b;
+    margin-top: 20px;
+  }
+
+  .item {
+    justify-content: space-around;
+  }
+
+  .item li {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .programitem li {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .programitem .bar {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .listExperience>li {
+    flex-direction: column;
+  }
+
+  .listExperience>li ul {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+    border-left: none;
+    border-top: solid 4px #fff;
+    padding: 15px 0 5px 0;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+}
+
+/* 手機 (480px 以下) */
+@media screen and (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .resume {
+    padding: 20px 15px;
+  }
+
+  h1.tittle {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .left,
+  .center,
+  .right {
+    padding: 15px 0;
+  }
+
+  .item li {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .item li img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .btn a {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .programitem li {
+    margin-bottom: 20px;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+
+  .year {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+}
+
+/* 大螢幕 (1200px 以上) */
+@media screen and (min-width: 1200px) {
+  .resume {
+    max-width: 1400px;
+  }
+
+  .left {
+    flex: 4;
+  }
+
+  .center,
+  .right {
+    flex: 5;
+  }
 }

@@ -1,29 +1,33 @@
-
-<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="zh-TW">
 <head>
-    <title>Richard Hus Resume</title>
-    <link rel="icon" href="/assets/icon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Hsu Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/icon.ico" type="image/x-icon">
     <meta property="og:image" content="./assets/person.jpg">
     <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content>
-    <meta property="og:image:height" content>
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:title" content="Richard Hsu Resume">
     <meta property="og:description" content="Richard Hsu Resume">
 </head>
+<body>
 <div class="resume">
     <div class="left">
         <div>
             <h1 class="tittle">許子桓 Richard Hsu</h1>
-            <p><strong>勇於挑戰，無畏艱辛!</strong</p>
+            <p><strong>勇於挑戰，無畏艱辛!</strong></p>
             </div>
             <hr>
-            <img src="./assets/person.jpg" width=200x; height=220px>
+            <img src="./assets/person.jpg" class="profile-img">
 
             <div class="Introduction">
                 <span class="smalltittle">Introduction</span>
                 <h3 class="name">自我介紹</h3>
                 <ul>
-                    <li>擔任遊戲前端工程師六年經歷</li>
+                    <li>擔任遊戲前端工程師7年經歷</li>
                     <li>使用Cocos 2D、Cocos creator 引擎開發遊戲</li>
                     <li>Android、iOS 遊戲開發</li>
                     <li>上架 Google Play、APP Store 經驗</li>
@@ -67,6 +71,18 @@
                     Go Server</a>
                 <p><strong>自學 golang 製作訂房系統的 Go Server </strong></p>
             </div>
+            <div class="btn">
+                <a class="works"
+                    href="https://github.com/Tzuhuanhsu/housekeeper_go_server">宙斯之力
+                    Go Server</a>
+                <p><strong>自學 golang 製作訂房系統的 Go Server </strong></p>
+            </div>
+            <div class="btn">
+                <a class="works"
+                    href="https://github.com/Tzuhuanhsu/housekeeper_go_server">魔法師梅林
+                    Go Server</a>
+                <p><strong>自學 golang 製作訂房系統的 Go Server </strong></p>
+            </div>
         </div>
         <div class="center">
             <div class="skills">
@@ -74,24 +90,19 @@
                 <h3 class="name">專業</h3>
                 <ul class="item">
                     <li>
-                        <img src="./assets/CocosLogo.png" width=70px;
-                            height=80px>Cocos creator
+                        <img src="./assets/CocosLogo.png" class="skill-icon">Cocos creator
                     </li>
                     <li>
-                        <img src="./assets/jenkinsIcon.png" width=70px;
-                            height=80px>Jenkins自動化
+                        <img src="./assets/jenkinsIcon.png" class="skill-icon">Jenkins自動化
                     </li>
                     <li>
-                        <img src="./assets/Xcode_14_icon.png" width=70px;
-                            height=80px>Xcode
+                        <img src="./assets/Xcode_14_icon.png" class="skill-icon">Xcode
                     </li>
                     <li>
-                        <img src="./assets/androidStudio.jpeg" width=70px;
-                            height=80px>Android Studio
+                        <img src="./assets/androidStudio.jpeg" class="skill-icon">Android Studio
                     </li>
                     <li>
-                        <img src="./assets/vscodeIcon.png" width=70px;
-                            height=80px>VS Code
+                        <img src="./assets/vscodeIcon.png" class="skill-icon">VS Code
                     </li>
                 </ul>
             </div>
@@ -138,7 +149,7 @@
                     <li>
                         Swift and swiftUI
                         <div class="bar">
-                            <div class="v50"></div>
+                            <div class="value v50"></div>
                         </div>
                     </li>
                     <li>
@@ -214,21 +225,34 @@
                                 <li>建置平台更新流程</li>
                                 <li>串接第三方SDK(iOS儲值、Firebase、Appsflyer、Line
                                     Login、Facebook login、Apple Single in)
-                                    <li>上架 Google Play、APP Store
-                                    </li>
-                                </ul>
+                                    <li>上架 Google Play、APP Store</li>
                             </ul>
-                        </li>
-                        <li class="year">Mar.2023
+                        </ul>
+                        <li class="year">2023
                             <ul>
-                                <h3>家庭個人因素，暫離職場</h3>
+                                <h3>(Mar.)家庭個人因素，暫離職場</h3>
                                 <ul>
                                     <li>自學 golang 架設訂房Server and client</li>
                                     <li>自學 swift and swiftUI</li>
                                 </ul>
                             </ul>
                         </li>
+                    <li class="year">2024
+                        <ul>
+                            <h3>(Apr.)加入網銀國際台北分公司</h3>
+                            <ul>
+                                <li>擔任Cocos creator SLOT 前端主要負責人</li>
+                                <li>建置Cocos creator SLOT 開發流程</li>
+                                <li>優化Cocos creator SLOT 開發流程與效能</li>
+                                <li>Jenkins CI\CD 內部開發流程整合與優化</li>
+                                <li>整合與Server串接封包</li>
+                            </ul>
+                        </ul>
+                    </li>
                     </ul>
                 </div>
             </div>
         </div>
+</div>
+</body>
+</html>
