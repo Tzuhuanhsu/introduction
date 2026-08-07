@@ -1,13 +1,34 @@
+/* 全域盒模型與斷字：padding 不再撐破容器寬度，長字串可換行 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
 body {
-  display: flex;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/*
+  原本 body 是 display:flex + justify-content:center。
+  一旦子元素比 viewport 寬，居中會讓左側溢出到畫面外且無法捲動（左邊文字被切掉）。
+  改為一般區塊排版，由 .resume 自己 margin auto 居中，就不會有這個問題。
+*/
+body {
+  margin: 0;
   padding: 50px;
-  justify-content: center;
-  align-items: center;
   background-color: #3a3a3a;
   color: rgba(255, 255, 255, 0.95);
   font-weight: normal;
-  font-style: 14px;
   letter-spacing: 1px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* 複寫 */
@@ -57,6 +78,7 @@ p {
 .resume {
   position: relative;
   max-width: 1300px;
+  margin: 0 auto;
   display: flex;
   /* 啟用 flexbox */
   flex-wrap: wrap;
@@ -66,9 +88,10 @@ p {
 }
 
 .left {
-  /*   display:flex; */
   padding: 20px 40px 0 20px;
   flex: 5;
+  /* 允許 flex 項目縮到內容寬度以下，否則長內容會把整列撐寬 */
+  min-width: 0;
 }
 
 /* 個人照片基本樣式 */
@@ -301,6 +324,7 @@ p {
   text-align: left;
   padding: 20px 20px 0 20px;
   flex: 4;
+  min-width: 0;
   border-left: solid 1px #ffe65b;
   margin-right: 20px;
 }
@@ -309,6 +333,7 @@ p {
   text-align: left;
   padding: 20px 20px 0 20px;
   flex: 4;
+  min-width: 0;
   border-left: solid 1px #ffe65b;
 }
 
@@ -340,8 +365,8 @@ ul {
 }
 
 .listExperience>li ul {
-  width: 200px;
   flex: 7;
+  min-width: 0;
   padding: 5px 5px 5px 20px;
   border-left: solid 4px #fff;
   margin-left: 20px;
@@ -469,8 +494,9 @@ ul {
     padding: 15px 0;
   }
 
+  /* 5 個圖示在手機上排 2 欄，避免一個圖示佔一整列 */
   .item li {
-    width: 100%;
+    width: 50%;
     margin-bottom: 15px;
   }
 
