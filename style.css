@@ -316,6 +316,35 @@ a {
   margin-bottom: 16px;
 }
 
+/* 經歷：每年的項目排成兩欄小卡 */
+.exp-body .exp-cards {
+  padding-left: 0;
+}
+
+.exp-cards {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 20px;
+}
+
+.exp-cards li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 6px 0 6px 12px;
+  border-left: 3px solid var(--line);
+}
+
+.exp-cards strong {
+  font-size: 14px;
+}
+
+.exp-cards span {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
 /* 主管經驗：每小節單欄小卡 */
 .brief-list {
   list-style: none;
@@ -668,7 +697,8 @@ a.work-card:hover {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .ai-list {
+  .ai-list,
+  .exp-cards {
     grid-template-columns: 1fr;
   }
 
