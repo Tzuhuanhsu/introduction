@@ -20,282 +20,160 @@
 <body>
 <div class="resume">
 
-    <!-- ===== 左欄：基本資料 / 摘要 / 工具 / 技能 ===== -->
-    <div class="left">
-        <h1 class="main-title">許子桓 Richard Hsu</h1>
-        <p class="job-title">H5 遊戲開發處／開發一部部長｜技術主管 × AI 工作流導入</p>
-        <p class="tagline"><strong>勇於挑戰，無畏艱辛！</strong></p>
-        <hr>
+    <!-- ===== 頂部：個人資訊 ===== -->
+    <header class="hero">
+        <div class="hero-profile">
+            <img src="./assets/person.jpg" class="avatar" alt="許子桓 Richard Hsu 個人照">
+            <h1 class="hero-name">許子桓 Richard Hsu</h1>
+            <p class="hero-job">H5 遊戲開發處／開發一部部長｜技術主管 × AI 工作流導入</p>
+            <p class="hero-location">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+                台北市／新北市
+            </p>
+        </div>
 
-        <img src="./assets/person.jpg" class="profile-img" alt="許子桓 Richard Hsu 個人照">
+        <div class="hero-intro">
+            <p class="tagline">以 AI 工作流與自動化，帶領遊戲前端團隊更快、更穩地交付</p>
+            <ul class="hero-proof">
+                <li>版本產出時間 <strong>−70%</strong></li>
+                <li>SLOT 單款串接 <strong>3 天 → 1 天內</strong></li>
+                <li>6 人團隊<strong>全員導入 AI 開發</strong></li>
+            </ul>
+            <ul class="hero-contact">
+                <li>
+                    <a href="https://github.com/Tzuhuanhsu" target="_blank" rel="noopener">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+                        github.com/Tzuhuanhsu
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
 
-        <ul class="contact">
-            <li><span class="contact-key">地區</span>台北市／新北市</li>
-            <li><span class="contact-key">GitHub</span>
-                <a href="https://github.com/Tzuhuanhsu" target="_blank" rel="noopener">github.com/Tzuhuanhsu</a>
-            </li>
-        </ul>
+    <main class="content">
 
-        <div class="summary">
+        <!-- ===== 核心優勢 ===== -->
+        <section class="section summary">
             <span class="section-label">Summary</span>
-            <h3 class="name">核心優勢</h3>
-            <ul>
-                <li><strong>推動 AI 原生開發</strong>｜設計「人輔助 AI」開發工作流，<strong>6 人團隊全數納入日常開發</strong></li>
-                <li><strong>Agentic AI 實作</strong>｜自訂 Skill／SubAgent／MCP 整合，一個指令完成 Review → Commit</li>
-                <li><strong>現任開發一部部長</strong>｜帶領 6 人團隊：排程、技術決策、績效與招募</li>
-                <li><strong>9 年遊戲前端實務經驗</strong>（2016 起）｜Cocos2d-x 至 Cocos Creator，跨 Android／iOS／H5</li>
-                <li><strong>Jenkins + Python 自動化</strong>｜版本產出時間<strong>減少 70% 以上</strong></li>
-                <li><strong>SLOT 公版架構</strong>｜單款串接 3 天 → <strong>1 天以內</strong></li>
-                <li><strong>正式環境部署與風險控管</strong>｜CI/CD、白名單先行測試、熱更新／回滾、雙平台上架</li>
-                <li><strong>多品類 H5</strong>｜SLOT、押分機、麻將、魚機；首屏載入 10 秒 → <strong>7 秒</strong></li>
+            <h2 class="section-title">核心優勢</h2>
+            <ul class="summary-grid">
+                <li><strong>帶領 6 人 H5 遊戲開發團隊</strong>｜現任開發一部部長：排程、技術決策、績效與招募</li>
+                <li><strong>推動 AI 原生開發</strong>｜設計「人輔助 AI」開發工作流並導入全團隊，一個指令完成 Review → Commit</li>
+                <li><strong>自動化與架構提效</strong>｜Jenkins + Python 版本產出時間<strong>減少 70% 以上</strong>；SLOT 公版單款串接 3 天 → <strong>1 天以內</strong></li>
+                <li><strong>線上品質與風險控管</strong>｜白名單先行測試、熱更新／回滾、雙平台上架；首屏載入 10 秒 → <strong>7 秒</strong></li>
+                <li><strong>9 年遊戲前端實務經驗</strong>（2016 起）｜Cocos2d-x 至 Cocos Creator；SLOT、押分機、麻將、魚機，跨 Android／iOS／H5</li>
             </ul>
-        </div>
+        </section>
 
-        <div class="skills">
-            <span class="section-label">Tools</span>
-            <h3 class="name">開發工具</h3>
-            <ul class="item">
-                <li><img src="./assets/claudeIcon.svg" class="skill-icon" alt="Claude Code">Claude Code</li>
-                <li><img src="./assets/CocosLogo.png" class="skill-icon" alt="Cocos Creator">Cocos Creator</li>
-                <li><img src="./assets/jenkinsIcon.png" class="skill-icon" alt="Jenkins">Jenkins 自動化</li>
-                <li><img src="./assets/Xcode_14_icon.png" class="skill-icon" alt="Xcode">Xcode</li>
-                <li><img src="./assets/androidStudio.jpeg" class="skill-icon" alt="Android Studio">Android Studio</li>
-            </ul>
-            <p class="tool-note">AI 開發：Claude（Agent、Skill、MCP 設定）／GitHub Copilot Agent</p>
-            <p class="tool-note">版控與協作：Git／GitLab／Jenkins CI-CD／VS Code</p>
-        </div>
-
-        <div class="programSkills">
-            <span class="section-label">Program Skills</span>
-            <h3 class="name">程式技能</h3>
-            <ul class="skill-tier">
-                <li>
-                    <span class="tier-label tier-main">主力</span>
-                    <div class="tier-body">
-                        <strong>Claude Code / AI Agent 開發</strong>
-                        <p>自訂 Agent 與 Skill／MCP 整合／團隊 AI 開發規範制定</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="tier-label tier-main">主力</span>
-                    <div class="tier-body">
-                        <strong>TypeScript / JavaScript</strong>
-                        <p>Cocos Creator 主要開發語言／架構設計與規範制定</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="tier-label tier-main">主力</span>
-                    <div class="tier-body">
-                        <strong>Python</strong>
-                        <p>Jenkins 自動化工具鏈／版本比對打包／跨系統整合</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="tier-label tier-good">熟練</span>
-                    <div class="tier-body">
-                        <strong>C++</strong>
-                        <p>Cocos2d-x 引擎與平台功能封裝／MVC、State Machine、Observer</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="tier-label tier-good">熟練</span>
-                    <div class="tier-body">
-                        <strong>Lua</strong>
-                        <p>遊戲應用層開發／免編譯即時更新</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="tier-label tier-good">熟練</span>
-                    <div class="tier-body">
-                        <strong>Objective-C / Java</strong>
-                        <p>iOS／Android 原生層開發／第三方 SDK 串接</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="tier-label tier-basic">具備經驗</span>
-                    <div class="tier-body">
-                        <strong>Golang / Swift &amp; SwiftUI / SQL</strong>
-                        <p>自學完成訂房系統 Go Server 與 Client</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-    </div>
-
-    <!-- ===== 中欄：AI 導入成果 / 技術主管經驗 / 作品 ===== -->
-    <div class="center">
-        <div class="ai">
+        <!-- ===== AI 導入成果 ===== -->
+        <section class="section ai">
             <span class="section-label">AI Engineering</span>
-            <h3 class="name">AI 導入成果</h3>
-            <p class="tool-note">從「AI 輔助人」到「人輔助 AI」：把團隊開發經驗封裝成 AI 可執行的 Skill，AI 參與討論與開發，人專注在定規格與確認。從 GitHub Copilot Agent 到 Claude Code，<strong>6 人團隊全數納入日常開發</strong>。</p>
+            <h2 class="section-title">AI 導入成果</h2>
+            <p class="lead">從「AI 輔助人」到「人輔助 AI」：把團隊開發經驗封裝成 AI 可重複執行的流程，AI 負責撰寫與初審，人負責定規格與把關。從 GitHub Copilot Agent 到 Claude Code，<strong>6 人團隊全數納入日常開發</strong>。</p>
 
-            <h4 class="sub-heading">01 經驗 Skill 化</h4>
-            <ul>
-                <li><strong>/ts-review</strong>：Code Review 規範與 Commit 流程封裝成 Skill ＋ 2 個 SubAgent（TypescriptReview／GitCommit），原本需手動呼叫兩次，<strong>改為一個指令完成 Review → Commit</strong>，人只需下指令與確認結果</li>
-                <li><strong>經驗 → 規則 → 流程</strong>：個人 Review 經驗寫成規範文件與 Agent，以 Plugin 打包隨 repo 散佈，<strong>任何成員執行都得到一致的審查品質</strong></li>
-                <li><strong>Context Engineering</strong>：SubAgent 只帶規範與 diff、獨立 context，Review 更聚焦；主對話只收結果、不被塞滿</li>
-                <li><strong>Daily Code Review</strong>：排程每日自動審查，記錄 SHA 只向前 Review，報告附問題、來源 Commit 與作者推送團隊通知，<strong>程式碼被改壞時不需等到人工發現</strong></li>
-                <li><strong>Commit 格式統一</strong>：由 GitCommit-Agent 產生一致格式的 Commit Message，取代成員各自撰寫</li>
+            <ul class="ai-list">
+                <li><strong>Code Review 一個指令完成</strong>：將團隊 Review 規範與 Commit 流程封裝成 AI 流程，原本需兩次手動操作，<strong>改為一個指令完成 Review → Commit</strong>，任何成員執行都得到一致的審查品質</li>
+                <li><strong>每日自動 Code Review</strong>：排程只審查新增的變更，問題連同來源 Commit 與作者推送團隊通知，<strong>程式碼被改壞時不需等到人工發現</strong></li>
+                <li><strong>規格驅動的 AI 開發</strong>：需求先拆成小顆粒度的計畫與 Task，經人確認後 AI 才能動手；每個 Task 附驗收條件，<strong>以實際結果驗收，不以「AI 說完成」為準</strong></li>
+                <li><strong>AI 直接操作遊戲編輯器</strong>：透過 MCP 讓 AI 操作 Cocos Creator 的節點、元件、Prefab 與場景</li>
+                <li><strong>開發知識沉澱</strong>：開發決策寫成 ADR 文件回存知識庫，下次開發自動引用，形成「開發 → Review → Commit → 知識累積」的迴圈</li>
+                <li><strong>企劃也能用 AI 參與開發</strong>：與企劃訂定協作規範（暫代素材命名、非正式需求另切 Branch、週會先提緊急需求），<strong>企劃在 Branch 上開發，正式規格經工作流進主線</strong>，暫時需求不影響主線</li>
+                <li><strong>README 單一資訊來源</strong>：網址、測試環境、建置任務、分支規則集中記錄，減少重複詢問，新成員可直接從文件上手</li>
             </ul>
+            <p class="note">實作細節（/ts-review、/cocos-develop、SubAgent 與 Context Engineering 設計）請見作品區「AI 工作流作品集」。</p>
+        </section>
 
-            <h4 class="sub-heading">02 人輔助 AI 開發</h4>
-            <ul>
-                <li><strong>/cocos-develop 開發總控</strong>：查知識庫 → 擬計畫 → 拆 Task 人確認 → 逐 Task 執行驗證 → 知識沉澱，小顆粒度 Spec／Task 驅動開發</li>
-                <li><strong>人工確認門檻</strong>：計畫與 Task 未經人同意前，AI 不得建立、修改、刪除任何檔案或場景物件</li>
-                <li><strong>可驗收的 Task</strong>：每個 Task 必附驗收條件／邊界條件／失敗處理，<strong>以實際讀回值驗收，不以「AI 說完成」為準</strong></li>
-                <li><strong>Cocos Creator × MCP</strong>：程式與 IDE 操作分工兩個 Agent，Agent 直接操作節點／元件／Prefab／場景</li>
-                <li><strong>團隊流水線</strong>：/cocos-develop → /ts-review → GitCommit-Agent → <strong>ADR 決策文件</strong>沉澱回知識庫，下次開發自動引用，形成迴圈</li>
-            </ul>
-
-            <h4 class="sub-heading">03 跨職能協作</h4>
-            <ul>
-                <li><strong>企劃也用 AI 寫程式</strong>：與企劃訂定 AI 協作規範（暫代素材加 _test、非正式需求切 Branch 不 Merge、週會先提出緊急需求），<strong>企劃在 Branch 上開發，正式規格經工作流進主線</strong></li>
-                <li><strong>README 單一資訊來源</strong>：網址、測試 URL、建置任務、分支規則（main／QC／Release）集中記錄，減少重複詢問，新成員可直接從文件上手</li>
-                <li><strong>First Principles 討論</strong>：找出假設 → 拆解問題 → 從根本建立解法，在跨職能溝通上取得共識</li>
-                <li><strong>跨系統自動化</strong>：GitLab Issue × Google Sheet 資料同步</li>
-            </ul>
-
-            <h4 class="sub-heading">未來方向：AI In Table &amp; Loop</h4>
-            <ul>
-                <li><strong>In Table</strong>：/plan-ppt-parser 將企劃 PPT 轉為 Markdown 開發計畫，不明確處逐項詢問，讓 AI 坐上討論桌</li>
-                <li><strong>In Loop</strong>：AI 寫 → AI Review → AI Commit，人在每個關卡負責確認</li>
-            </ul>
-        </div>
-
-        <div class="leadership">
+        <!-- ===== 技術主管經驗 ===== -->
+        <section class="section leadership">
             <span class="section-label">Leadership</span>
-            <h3 class="name">技術主管經驗</h3>
+            <h2 class="section-title">技術主管經驗</h2>
 
-            <h4 class="sub-heading">團隊管理</h4>
-            <ul>
-                <li><strong>團隊規模</strong>：6 人 H5 遊戲開發團隊</li>
-                <li><strong>排程與人力調度</strong>：工時評估、交付承諾、跨專案分配</li>
-                <li><strong>面試與招募</strong>：職缺定義、技術面試、人選評估</li>
-                <li><strong>績效評核</strong>：績效評估與一對一回饋</li>
-                <li><strong>新人 Onboarding</strong>：上手流程與教學文件</li>
-                <li><strong>技術輔導</strong>：成員問題排除、開發知識文件化</li>
-            </ul>
-
-            <h4 class="sub-heading">技術治理</h4>
-            <ul>
-                <li><strong>開發框架與標準</strong>：TypeScript 規範、Code Review 清單、架構原則</li>
-                <li><strong>SLOT 公版產線</strong>：由複製改為公版沿用，單款串接 3 天 → <strong>1 天以內</strong>，公版變更只需改一處；並優化資源包與快取策略</li>
-                <li><strong>引擎升級</strong>：主導 Cocos Creator 2.x → 3.x 升級與風險評估</li>
-            </ul>
-
-            <h4 class="sub-heading">品質與線上風險管理</h4>
-            <ul>
-                <li><strong>白名單先行測試</strong>：新版本受控範圍驗證後再全量發布</li>
-                <li><strong>Hotfix 決策</strong>：判斷修復方式與上線時機，經熱更新快速修正</li>
-                <li><strong>版本回滾</strong>：回滾與強制更新機制</li>
-                <li><strong>事後檢討</strong>：根因回饋至開發流程與自動化檢查</li>
-            </ul>
-
-            <h4 class="sub-heading">跨部門協作與技術推廣</h4>
-            <ul>
-                <li><strong>平行協作對象</strong>：企劃／Server 端團隊／美術動畫／品檢 QA／營運</li>
-                <li><strong>跨部門自動化</strong>：協助品檢團隊整合 GitLab Issue × Google Sheet</li>
-                <li><strong>新技術導入</strong>：AI Coding Agent、Jenkins CI/CD、公版架構</li>
-                <li><strong>對內技術分享</strong>：Jenkins 自動化建置、產品轉化率分析</li>
-                <li><strong>競品分析</strong>：拆解海外 SLOT 的遊戲體驗與演出節奏，整理成文件分享</li>
-            </ul>
-        </div>
-
-        <div class="portfolio">
-            <span class="section-label">Portfolio</span>
-            <h3 class="name">作品</h3>
-
-            <div class="btn">
-                <a class="works" href="./Richard_AI工作流作品集.pdf" target="_blank" rel="noopener">AI 工作流作品集</a>
-                <p><strong>從「AI 輔助人」到「人輔助 AI」：遊戲前端團隊的 AI 開發工作流設計與導入（經驗 Skill 化／人輔助 AI 開發／跨職能協作）</strong></p>
-            </div>
-
-            <div class="btn">
-                <a class="works" href="https://github.com/Tzuhuanhsu/competitive-analysis/blob/main/SugarTeddy/SugarTeddy.pdf" target="_blank" rel="noopener">SLOT 競品分析報告</a>
-                <p><strong>海外 SLOT 產品的遊戲體驗分析文件</strong></p>
-            </div>
-
-            <div class="btn">
-                <a class="works" href="https://github.com/Tzuhuanhsu/Copilot_Agent" target="_blank" rel="noopener">AI Coding Agent 導入經驗</a>
-                <p><strong>團隊導入 AI Coding Agent 的規範、Agent 設定與實作經驗整理</strong></p>
-            </div>
-
-            <div class="btn">
-                <p class="works-static">Cocos Creator 自動化建置流程</p>
-                <img src="./assets/cocoscratorFornProcess.png" class="process-img" alt="Cocos Creator 搭配 Jenkins 與 Python 的自動化建置流程圖">
-            </div>
-
-            <div class="btn">
-                <!-- TODO: 這兩份 Google Slides 原本是 /edit 編輯連結，已改為檢視連結；請到雲端硬碟把權限設為「知道連結的任何人 - 檢視者」 -->
-                <a class="works" href="https://docs.google.com/presentation/d/1hojj4V9Iqg0YMdWHSESMWYHx7UuU6uyIUZebUBjmw0g/view" target="_blank" rel="noopener">Jenkins 自動化建置報告</a>
-                <p><strong>使用 Jenkins 完成遊戲自動化建置的內部分享</strong></p>
-            </div>
-
-            <div class="btn">
-                <a class="works" href="https://docs.google.com/presentation/d/18D9VhJEVG8PS61r-y_GxB2ElXDT-Ndjc5uOScZMQWyI/view" target="_blank" rel="noopener">產品轉化率分析報告</a>
-                <p><strong>透過 Log 追蹤使用者行為，分析並調校產品轉化率</strong></p>
-            </div>
-
-            <div class="btn">
-                <a class="works" href="https://www.apex-win.com/zh-TW" target="_blank" rel="noopener">宙斯之力 / 魔法師梅林</a>
-                <p><strong>Cocos Creator SLOT 遊戲，擔任前端主要負責人</strong></p>
-                <!-- TODO: 官網首頁看不出你的作品，建議補上遊戲截圖或直接可玩的連結 -->
-            </div>
-
-            <div class="btn">
-                <a class="works" href="https://www.gametower.com.tw/games/donut/index.aspx" target="_blank" rel="noopener">麻辣娛樂城</a>
-                <ul>
-                    <li>前端遊戲開發、遊戲引擎開發</li>
-                    <li>Android、iOS、H5 三版本產出</li>
-                    <li>自動化遊戲版本產出機制</li>
-                    <li>串接 iOS 原生支付 SDK</li>
-                </ul>
-            </div>
-
-            <div class="btn">
-                <a class="works" href="https://github.com/Tzuhuanhsu/CocosCreator" target="_blank" rel="noopener">Cocos Creator 捕魚機路徑編輯器</a>
-                <p><strong>自製 Cocos Creator 編輯器擴充工具，用於編輯魚群移動路徑</strong></p>
-            </div>
-
-            <div class="btn">
-                <a class="works" href="https://github.com/Tzuhuanhsu/housekeeper_go_server" target="_blank" rel="noopener">訂房系統 Go Server</a>
-                <p><strong>自學 Golang 完成的訂房系統後端</strong></p>
-            </div>
-        </div>
-    </div>
-
-    <!-- ===== 右欄：經歷（新 → 舊） ===== -->
-    <div class="right">
-        <div class="experience">
-            <span class="section-label">Experience</span>
-            <h3 class="name">經歷</h3>
-
-            <p class="company-line"><strong>網銀國際</strong>（台北分公司）｜2024.04 – 現在</p>
-            <ul class="listExperience">
-                <li class="year">2026
+            <div class="group-grid">
+                <div class="group">
+                    <h3 class="sub-heading">團隊管理</h3>
                     <ul>
-                        <li class="role">H5 遊戲開發處／開發一部部長</li>
-                        <li>帶領團隊導入 AI Coding Agent，建立團隊的 AI 開發規範</li>
-                        <li>設計「人輔助 AI」工作流：/cocos-develop 開發總控、/ts-review 一鍵 Review → Commit、每日排程自動 Code Review</li>
-                        <li>與企劃訂定 AI 協作規範，並以 README 建立團隊單一資訊來源</li>
+                        <li><strong>團隊規模</strong>：6 人 H5 遊戲開發團隊</li>
+                        <li><strong>排程與人力調度</strong>：工時評估、交付承諾、跨專案分配</li>
+                        <li><strong>面試與招募</strong>：職缺定義、技術面試、人選評估</li>
+                        <li><strong>績效評核</strong>：績效評估與一對一回饋</li>
+                        <li><strong>新人 Onboarding</strong>：上手流程與教學文件</li>
+                        <li><strong>技術輔導</strong>：成員問題排除、開發知識文件化</li>
+                    </ul>
+                </div>
+
+                <div class="group">
+                    <h3 class="sub-heading">技術治理</h3>
+                    <ul>
+                        <li><strong>開發框架與標準</strong>：TypeScript 規範、Code Review 清單、架構原則</li>
+                        <li><strong>SLOT 公版產線</strong>：由複製改為公版沿用，單款串接 3 天 → <strong>1 天以內</strong>，公版變更只需改一處；並優化資源包與快取策略</li>
+                        <li><strong>引擎升級</strong>：主導 Cocos Creator 2.x → 3.x 升級與風險評估</li>
+                    </ul>
+                </div>
+
+                <div class="group">
+                    <h3 class="sub-heading">品質與線上風險管理</h3>
+                    <ul>
+                        <li><strong>白名單先行測試</strong>：新版本受控範圍驗證後再全量發布</li>
+                        <li><strong>Hotfix 決策</strong>：判斷修復方式與上線時機，經熱更新快速修正</li>
+                        <li><strong>版本回滾</strong>：回滾與強制更新機制</li>
+                        <li><strong>事後檢討</strong>：根因回饋至開發流程與自動化檢查</li>
+                    </ul>
+                </div>
+
+                <div class="group">
+                    <h3 class="sub-heading">跨部門協作與技術推廣</h3>
+                    <ul>
+                        <li><strong>平行協作對象</strong>：企劃／Server 端團隊／美術動畫／品檢 QA／營運</li>
+                        <li><strong>跨部門自動化</strong>：協助品檢團隊整合 GitLab Issue × Google Sheet</li>
+                        <li><strong>新技術導入</strong>：AI Coding Agent、Jenkins CI/CD、公版架構</li>
+                        <li><strong>對內技術分享</strong>：Jenkins 自動化建置、產品轉化率分析</li>
+                        <li><strong>競品分析</strong>：拆解海外 SLOT 的遊戲體驗與演出節奏，整理成文件分享</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 經歷（新 → 舊）：左日期、右職稱與內容 ===== -->
+        <section class="section experience">
+            <span class="section-label">Experience</span>
+            <h2 class="section-title">經歷</h2>
+
+            <div class="company">
+                <h3 class="company-name">網銀國際<span class="company-note">（台北分公司）</span></h3>
+                <span class="company-period">2024.04 – 現在</span>
+            </div>
+
+            <div class="exp-row">
+                <div class="exp-date">2026</div>
+                <div class="exp-body">
+                    <h4 class="exp-role">H5 遊戲開發處／開發一部部長</h4>
+                    <ul>
+                        <li>帶領團隊導入 AI Coding Agent 與「人輔助 AI」開發工作流，建立團隊 AI 開發規範與跨職能協作規範</li>
                         <li>協助品檢團隊建立 GitLab Issue 與 Google Sheet 整合自動化流程</li>
                         <li>1月　帶領團隊完成麻將 H5「啪麻雀」</li>
                         <li>1月　帶領團隊製作 H5 魚機「神話魚機」</li>
                     </ul>
-                </li>
-                <li class="year">2025
+                </div>
+            </div>
+
+            <div class="exp-row">
+                <div class="exp-date">2025</div>
+                <div class="exp-body">
+                    <h4 class="exp-role">12月　升任 H5 遊戲開發處／開發一部部長</h4>
                     <ul>
-                        <li class="role">12月　升任 H5 遊戲開發處／開發一部部長</li>
                         <li>接手 6 人團隊，負責排程、技術決策與成員技術輔導</li>
                         <li>帶領團隊進行麻將 H5 製作與「麻將之星」改版</li>
                         <li>以 Python + Jenkinsfile 整合 CI/CD 自動化指令流程</li>
                         <li>6月　完成押分機 H5「賓果行星」</li>
                     </ul>
-                </li>
-                <li class="year">2024
+                </div>
+            </div>
+
+            <div class="exp-row">
+                <div class="exp-date">2024</div>
+                <div class="exp-body">
+                    <h4 class="exp-role">4月　加入網銀國際，擔任 Cocos Creator SLOT 前端主要負責人</h4>
                     <ul>
-                        <li class="role">4月　加入網銀國際，擔任 Cocos Creator SLOT 前端主要負責人</li>
                         <li>從無到有建置 Cocos Creator SLOT 開發流程並持續優化效能</li>
                         <li>制定開發標準與流程，協助團隊成員解決技術問題</li>
                         <li>整合 Jenkins CI/CD 內部開發流程</li>
@@ -304,81 +182,254 @@
                             <!-- TODO: 補上主責的 SLOT 實際款數，例如「主責完成 8 款 H5 SLOT」 -->
                         </li>
                     </ul>
-                </li>
-            </ul>
+                </div>
+            </div>
 
-            <p class="company-line"><strong>職涯轉換期</strong>｜2023.03 – 2024.03</p>
-            <ul class="listExperience">
-                <li class="year">2023
+            <div class="company">
+                <h3 class="company-name">職涯轉換期</h3>
+                <span class="company-period">2023.03 – 2024.03</span>
+            </div>
+
+            <div class="exp-row">
+                <div class="exp-date">2023</div>
+                <div class="exp-body">
+                    <h4 class="exp-role">3月　因家庭因素暫離職場，期間持續技術投入</h4>
                     <ul>
-                        <li class="role">3月　因家庭因素暫離職場，期間持續技術投入</li>
                         <li>自學 Golang，完成訂房系統 Server 與 Client</li>
                         <li>自學 Swift 與 SwiftUI</li>
                     </ul>
-                </li>
-            </ul>
+                </div>
+            </div>
 
-            <p class="company-line"><strong>鈊象電子</strong>｜2016 – 2023.03</p>
-            <ul class="listExperience">
-                <li class="year">2022
+            <div class="company">
+                <h3 class="company-name">鈊象電子</h3>
+                <span class="company-period">2016 – 2023.03</span>
+            </div>
+
+            <div class="exp-row">
+                <div class="exp-date">2022</div>
+                <div class="exp-body">
+                    <h4 class="exp-role">麻辣娛樂城平台 Client（Cocos Creator）</h4>
                     <ul>
-                        <li class="role">麻辣娛樂城平台 Client（Cocos Creator）</li>
                         <li>主導 Cocos Creator 2.0 升級至 3.0</li>
                         <li>建置 Android、iOS 專案與平台編譯自動化流程</li>
                         <li>建置平台熱更新與強制更新流程</li>
                         <li>串接第三方 SDK：iOS 儲值、Firebase、AppsFlyer、Line Login、Facebook Login、Sign in with Apple</li>
                         <li>負責上架 Google Play 與 App Store</li>
                     </ul>
-                </li>
-                <li class="year">2020 – 2021
+                </div>
+            </div>
+
+            <div class="exp-row">
+                <div class="exp-date">2020 – 2021</div>
+                <div class="exp-body">
+                    <h4 class="exp-role">FHM 遊戲平台 Client 持續開發與維護（Cocos2d-x）</h4>
                     <ul>
-                        <li class="role">FHM 遊戲平台 Client 持續開發與維護（Cocos2d-x）</li>
                         <li>平台功能迭代開發與線上問題排除</li>
                         <li>遊戲移植與版本產出維運（Android / iOS）</li>
                         <li>持續維護並擴充 Jenkins + Python 自動化流程</li>
                     </ul>
-                </li>
-                <li class="year">2019
+                </div>
+            </div>
+
+            <div class="exp-row">
+                <div class="exp-date">2019</div>
+                <div class="exp-body">
+                    <h4 class="exp-role">FHM 遊戲平台 Client（Cocos2d-x）</h4>
                     <ul>
-                        <li class="role">FHM 遊戲平台 Client（Cocos2d-x）</li>
                         <li>結合 Jenkins 與 Python 改造 APP 更新機制，優化製程並提高更新速度</li>
                         <li>遊戲 APP 轉化流程優化</li>
                         <li>遊戲移植與平台功能開發、維護</li>
                         <li>將 Android 專案自 Eclipse 遷移至 Android Studio，並完成第三方套件整合</li>
                     </ul>
-                </li>
-                <li class="year">2018
+                </div>
+            </div>
+
+            <div class="exp-row">
+                <div class="exp-date">2018</div>
+                <div class="exp-body">
+                    <h4 class="exp-role">iRich 遊戲平台 Client（Cocos2d-x）</h4>
                     <ul>
-                        <li class="role">iRich 遊戲平台 Client（Cocos2d-x）</li>
                         <li>更新機制優化</li>
                     </ul>
-                </li>
-                <li class="year">2017
+                </div>
+            </div>
+
+            <div class="exp-row">
+                <div class="exp-date">2017</div>
+                <div class="exp-body">
+                    <h4 class="exp-role">iRich 遊戲平台 Client（Cocos2d-x）</h4>
                     <ul>
-                        <li class="role">iRich 遊戲平台 Client（Cocos2d-x）</li>
                         <li>擔任前端遊戲工程師</li>
                         <li>遊戲移植與平台功能開發、維護</li>
                     </ul>
-                </li>
-                <li class="year">2016
+                </div>
+            </div>
+
+            <div class="exp-row">
+                <div class="exp-date">2016</div>
+                <div class="exp-body">
+                    <h4 class="exp-role">進入鈊象電子擔任前端工程師</h4>
                     <ul>
-                        <li class="role">進入鈊象電子擔任前端工程師</li>
                         <li>線上平台共用工具（SDK）開發</li>
                     </ul>
-                </li>
-            </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 作品：三張主打圖卡 + 其他作品 ===== -->
+        <section class="section portfolio">
+            <span class="section-label">Portfolio</span>
+            <h2 class="section-title">作品</h2>
+
+            <div class="work-gallery">
+                <a class="work-card" href="./Richard_AI工作流作品集.pdf" target="_blank" rel="noopener">
+                    <img src="./assets/thumb-ai-portfolio.jpg" alt="AI 工作流作品集封面">
+                    <div class="work-card-body">
+                        <h3>AI 工作流作品集</h3>
+                        <p>從「AI 輔助人」到「人輔助 AI」：遊戲前端團隊的 AI 開發工作流設計與導入（經驗 Skill 化／人輔助 AI 開發／跨職能協作）</p>
+                    </div>
+                </a>
+
+                <div class="work-card">
+                    <img src="./assets/cocoscratorFornProcess.png" class="work-card-diagram" alt="Cocos Creator 搭配 Jenkins 與 Python 的自動化建置流程圖">
+                    <div class="work-card-body">
+                        <h3>Cocos Creator 自動化建置流程</h3>
+                        <p>Cocos Creator × Jenkins × Python 自動化建置</p>
+                    </div>
+                </div>
+
+                <a class="work-card" href="https://github.com/Tzuhuanhsu/competitive-analysis/blob/main/SugarTeddy/SugarTeddy.pdf" target="_blank" rel="noopener">
+                    <img src="./assets/thumb-competitive.jpg" alt="SLOT 競品分析報告封面">
+                    <div class="work-card-body">
+                        <h3>SLOT 競品分析報告</h3>
+                        <p>海外 SLOT 產品的遊戲體驗分析文件</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="work-list">
+                <div class="work-item">
+                    <a href="https://github.com/Tzuhuanhsu/Copilot_Agent" target="_blank" rel="noopener">AI Coding Agent 導入經驗</a>
+                    <p>團隊導入 AI Coding Agent 的規範、Agent 設定與實作經驗整理</p>
+                </div>
+
+                <div class="work-item">
+                    <!-- TODO: 這兩份 Google Slides 原本是 /edit 編輯連結，已改為檢視連結；請到雲端硬碟把權限設為「知道連結的任何人 - 檢視者」 -->
+                    <a href="https://docs.google.com/presentation/d/1hojj4V9Iqg0YMdWHSESMWYHx7UuU6uyIUZebUBjmw0g/view" target="_blank" rel="noopener">Jenkins 自動化建置報告</a>
+                    <p>使用 Jenkins 完成遊戲自動化建置的內部分享</p>
+                </div>
+
+                <div class="work-item">
+                    <a href="https://docs.google.com/presentation/d/18D9VhJEVG8PS61r-y_GxB2ElXDT-Ndjc5uOScZMQWyI/view" target="_blank" rel="noopener">產品轉化率分析報告</a>
+                    <p>透過 Log 追蹤使用者行為，分析並調校產品轉化率</p>
+                </div>
+
+                <div class="work-item">
+                    <a href="https://www.apex-win.com/zh-TW" target="_blank" rel="noopener">宙斯之力 / 魔法師梅林</a>
+                    <p>Cocos Creator SLOT 遊戲，擔任前端主要負責人</p>
+                    <!-- TODO: 官網首頁看不出你的作品，建議補上遊戲截圖或直接可玩的連結 -->
+                </div>
+
+                <div class="work-item">
+                    <a href="https://www.gametower.com.tw/games/donut/index.aspx" target="_blank" rel="noopener">麻辣娛樂城</a>
+                    <ul>
+                        <li>前端遊戲開發、遊戲引擎開發</li>
+                        <li>Android、iOS、H5 三版本產出</li>
+                        <li>自動化遊戲版本產出機制</li>
+                        <li>串接 iOS 原生支付 SDK</li>
+                    </ul>
+                </div>
+
+                <div class="work-item">
+                    <a href="https://github.com/Tzuhuanhsu/CocosCreator" target="_blank" rel="noopener">Cocos Creator 捕魚機路徑編輯器</a>
+                    <p>自製 Cocos Creator 編輯器擴充工具，用於編輯魚群移動路徑</p>
+                </div>
+
+                <div class="work-item">
+                    <a href="https://github.com/Tzuhuanhsu/housekeeper_go_server" target="_blank" rel="noopener">訂房系統 Go Server</a>
+                    <p>自學 Golang 完成的訂房系統後端</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 開發工具 / 程式技能（兩欄） ===== -->
+        <div class="two-col">
+            <section class="section tools">
+                <span class="section-label">Tools</span>
+                <h2 class="section-title">開發工具</h2>
+                <ul class="tool-icons">
+                    <li><img src="./assets/claudeIcon.svg" alt="Claude Code">Claude Code</li>
+                    <li><img src="./assets/CocosLogo.png" alt="Cocos Creator">Cocos Creator</li>
+                    <li><img src="./assets/jenkinsIcon.png" alt="Jenkins">Jenkins 自動化</li>
+                    <li><img src="./assets/Xcode_14_icon.png" alt="Xcode">Xcode</li>
+                    <li><img src="./assets/androidStudio.jpeg" alt="Android Studio">Android Studio</li>
+                </ul>
+                <p class="note">AI 開發：Claude（Agent、Skill、MCP 設定）／GitHub Copilot Agent</p>
+                <p class="note">版控與協作：Git／GitLab／Jenkins CI-CD／VS Code</p>
+            </section>
+
+            <section class="section skills">
+                <span class="section-label">Program Skills</span>
+                <h2 class="section-title">程式技能</h2>
+                <ul class="skill-tier">
+                    <li>
+                        <span class="tier-label tier-main">主力</span>
+                        <div class="tier-body">
+                            <strong>Claude Code / AI Agent 開發</strong>
+                            <p>自訂 Agent 與 Skill／MCP 整合／團隊 AI 開發規範制定</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="tier-label tier-main">主力</span>
+                        <div class="tier-body">
+                            <strong>TypeScript / JavaScript</strong>
+                            <p>Cocos Creator 主要開發語言／架構設計與規範制定</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="tier-label tier-main">主力</span>
+                        <div class="tier-body">
+                            <strong>Python</strong>
+                            <p>Jenkins 自動化工具鏈／版本比對打包／跨系統整合</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="tier-label tier-good">熟練</span>
+                        <div class="tier-body">
+                            <strong>C++ / Lua / Objective-C / Java</strong>
+                            <p>Cocos2d-x 引擎與平台功能封裝／iOS、Android 原生層與第三方 SDK 串接</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="tier-label tier-basic">具備經驗</span>
+                        <div class="tier-body">
+                            <strong>Golang / Swift &amp; SwiftUI / SQL</strong>
+                            <p>自學完成訂房系統 Go Server 與 Client</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
         </div>
 
-        <div class="education">
+        <!-- ===== 學歷 ===== -->
+        <section class="section education">
             <span class="section-label">Education</span>
-            <h3 class="name">學歷</h3>
-            <ul>
-                <li><strong>明新科技大學</strong>｜電子工程系</li>
-                <li>主修計算機領域，畢業專題負責程式開發</li>
-            </ul>
-        </div>
-    </div>
+            <h2 class="section-title">學歷</h2>
+            <div class="exp-row">
+                <div class="exp-date">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+                </div>
+                <div class="exp-body">
+                    <h4 class="exp-role">明新科技大學｜電子工程系</h4>
+                    <ul>
+                        <li>主修計算機領域，畢業專題負責程式開發</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
+    </main>
 </div>
 </body>
 </html>
