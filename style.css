@@ -316,7 +316,16 @@ a {
   margin-bottom: 16px;
 }
 
+/* 主管經驗：每小節單欄小卡 */
+.brief-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 /* 每張小卡：標題一行、結果一句 */
+.brief-list li,
 .ai-list li {
   display: flex;
   flex-direction: column;
@@ -325,6 +334,7 @@ a {
   border-left: 3px solid var(--brand);
 }
 
+.brief-list span,
 .ai-list span {
   color: var(--text-muted);
   font-size: 14px;
