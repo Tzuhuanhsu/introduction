@@ -528,6 +528,55 @@ ul {
   }
 }
 
+/* ===== 列印／PDF 輸出：16:9 頁面，與 AI 工作流作品集一致 ===== */
+@media print {
+  @page {
+    size: 1334px 750px;
+    margin: 0;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  html,
+  body {
+    overflow: visible;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  .resume {
+    max-width: none;
+    border: none;
+    padding: 40px 60px;
+  }
+
+  /* 避免元素被頁面切半 */
+  .btn,
+  .skill-tier li,
+  .listExperience>li,
+  .summary li,
+  .ai li,
+  .leadership li,
+  .education,
+  .profile-img,
+  .process-img,
+  h4.sub-heading,
+  .company-line {
+    break-inside: avoid;
+  }
+
+  h3.name,
+  h4.sub-heading,
+  .company-line {
+    break-after: avoid;
+  }
+}
+
 /* 大螢幕 (1200px 以上) */
 @media screen and (min-width: 1200px) {
   .resume {

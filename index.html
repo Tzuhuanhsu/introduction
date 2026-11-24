@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>許子桓 Richard Hsu｜H5 遊戲開發部長 / 技術主管</title>
-    <meta name="description" content="遊戲前端工程師 9 年實務經驗，現任 H5 遊戲開發處開發一部部長，帶領 6 人團隊。專長 Cocos Creator H5 遊戲開發、CI/CD 自動化、AI 開發流程導入。">
+    <title>許子桓 Richard Hsu｜技術主管 / AI 工作流導入・H5 遊戲開發部長</title>
+    <meta name="description" content="現任 H5 遊戲開發處開發一部部長，帶領 6 人團隊導入 AI 原生開發流程。專長 AI Agent／Skill 設計、MCP 整合、Claude Code、Cocos Creator、CI/CD 自動化，9 年前端實務經驗。">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./assets/icon.ico" type="image/x-icon">
     <!-- TODO: og:url 與 og:image 需改成部署後的絕對網址，社群平台無法抓取相對路徑 -->
@@ -20,10 +20,10 @@
 <body>
 <div class="resume">
 
-    <!-- ===== 左欄：基本資料 / 摘要 / 技能 ===== -->
+    <!-- ===== 左欄：基本資料 / 摘要 / 工具 / 技能 ===== -->
     <div class="left">
         <h1 class="main-title">許子桓 Richard Hsu</h1>
-        <p class="job-title">H5 遊戲開發處／開發一部部長｜技術主管</p>
+        <p class="job-title">H5 遊戲開發處／開發一部部長｜技術主管 × AI 工作流導入</p>
         <p class="tagline"><strong>勇於挑戰，無畏艱辛！</strong></p>
         <hr>
 
@@ -40,27 +40,14 @@
             <span class="section-label">Summary</span>
             <h3 class="name">核心優勢</h3>
             <ul>
+                <li><strong>推動 AI 原生開發</strong>｜設計「人輔助 AI」開發工作流，<strong>6 人團隊全數納入日常開發</strong></li>
+                <li><strong>Agentic AI 實作</strong>｜自訂 Skill／SubAgent／MCP 整合，一個指令完成 Review → Commit</li>
+                <li><strong>現任開發一部部長</strong>｜帶領 6 人團隊：排程、技術決策、績效與招募</li>
                 <li><strong>9 年遊戲前端實務經驗</strong>（2016 起）｜Cocos2d-x 至 Cocos Creator，跨 Android／iOS／H5</li>
-                <li><strong>現任開發一部部長</strong>｜帶領 6 人團隊</li>
-                <li><strong>AI Coding Agent 導入</strong>｜6 人團隊全數納入日常開發流程</li>
-                <li><strong>SLOT 公版架構</strong>｜單款串接 3 天 → <strong>1 天以內</strong></li>
                 <li><strong>Jenkins + Python 自動化</strong>｜版本產出時間<strong>減少 70% 以上</strong></li>
-                <li><strong>效能優化</strong>｜首屏載入 10 秒 → <strong>7 秒</strong></li>
-                <li><strong>線上風險控管</strong>｜白名單先行測試、熱更新／回滾機制</li>
-                <li><strong>多品類 H5</strong>｜SLOT、押分機、麻將、魚機；具 Google Play／App Store 上架經驗</li>
-            </ul>
-        </div>
-
-        <div class="ai">
-            <span class="section-label">AI Engineering</span>
-            <h3 class="name">AI 導入成果</h3>
-            <ul>
-                <li><strong>Agent 導入</strong>：落地 AI Coding Agent（GitHub Copilot Agent）並產出教學文件，<strong>6 人團隊全數納入日常開發</strong></li>
-                <li><strong>AI 開發規範</strong>：將 TypeScript 標準與審查清單寫成 Agent 指令集，產出自動套用團隊規範</li>
-                <li><strong>自訂 Agent</strong>：架構審查、Code Review、重構、Git Commit，<strong>降低人工 Review 時數</strong></li>
-                <li><strong>缺陷提早暴露</strong>：AI 先行審查，減少後段返工</li>
-                <li><strong>Cocos Creator × MCP</strong>：Agent 直接操作節點／元件／Prefab／場景</li>
-                <li><strong>跨系統自動化</strong>：GitLab Issue × Google Sheet 資料同步</li>
+                <li><strong>SLOT 公版架構</strong>｜單款串接 3 天 → <strong>1 天以內</strong></li>
+                <li><strong>正式環境部署與風險控管</strong>｜CI/CD、白名單先行測試、熱更新／回滾、雙平台上架</li>
+                <li><strong>多品類 H5</strong>｜SLOT、押分機、麻將、魚機；首屏載入 10 秒 → <strong>7 秒</strong></li>
             </ul>
         </div>
 
@@ -136,8 +123,46 @@
 
     </div>
 
-    <!-- ===== 中欄：技術主管經驗 / 作品 ===== -->
+    <!-- ===== 中欄：AI 導入成果 / 技術主管經驗 / 作品 ===== -->
     <div class="center">
+        <div class="ai">
+            <span class="section-label">AI Engineering</span>
+            <h3 class="name">AI 導入成果</h3>
+            <p class="tool-note">從「AI 輔助人」到「人輔助 AI」：把團隊開發經驗封裝成 AI 可執行的 Skill，AI 參與討論與開發，人專注在定規格與確認。從 GitHub Copilot Agent 到 Claude Code，<strong>6 人團隊全數納入日常開發</strong>。</p>
+
+            <h4 class="sub-heading">01 經驗 Skill 化</h4>
+            <ul>
+                <li><strong>/ts-review</strong>：Code Review 規範與 Commit 流程封裝成 Skill ＋ 2 個 SubAgent（TypescriptReview／GitCommit），原本需手動呼叫兩次，<strong>改為一個指令完成 Review → Commit</strong>，人只需下指令與確認結果</li>
+                <li><strong>經驗 → 規則 → 流程</strong>：個人 Review 經驗寫成規範文件與 Agent，以 Plugin 打包隨 repo 散佈，<strong>任何成員執行都得到一致的審查品質</strong></li>
+                <li><strong>Context Engineering</strong>：SubAgent 只帶規範與 diff、獨立 context，Review 更聚焦；主對話只收結果、不被塞滿</li>
+                <li><strong>Daily Code Review</strong>：排程每日自動審查，記錄 SHA 只向前 Review，報告附問題、來源 Commit 與作者推送團隊通知，<strong>程式碼被改壞時不需等到人工發現</strong></li>
+                <li><strong>Commit 格式統一</strong>：由 GitCommit-Agent 產生一致格式的 Commit Message，取代成員各自撰寫</li>
+            </ul>
+
+            <h4 class="sub-heading">02 人輔助 AI 開發</h4>
+            <ul>
+                <li><strong>/cocos-develop 開發總控</strong>：查知識庫 → 擬計畫 → 拆 Task 人確認 → 逐 Task 執行驗證 → 知識沉澱，小顆粒度 Spec／Task 驅動開發</li>
+                <li><strong>人工確認門檻</strong>：計畫與 Task 未經人同意前，AI 不得建立、修改、刪除任何檔案或場景物件</li>
+                <li><strong>可驗收的 Task</strong>：每個 Task 必附驗收條件／邊界條件／失敗處理，<strong>以實際讀回值驗收，不以「AI 說完成」為準</strong></li>
+                <li><strong>Cocos Creator × MCP</strong>：程式與 IDE 操作分工兩個 Agent，Agent 直接操作節點／元件／Prefab／場景</li>
+                <li><strong>團隊流水線</strong>：/cocos-develop → /ts-review → GitCommit-Agent → <strong>ADR 決策文件</strong>沉澱回知識庫，下次開發自動引用，形成迴圈</li>
+            </ul>
+
+            <h4 class="sub-heading">03 跨職能協作</h4>
+            <ul>
+                <li><strong>企劃也用 AI 寫程式</strong>：與企劃訂定 AI 協作規範（暫代素材加 _test、非正式需求切 Branch 不 Merge、週會先提出緊急需求），<strong>企劃在 Branch 上開發，正式規格經工作流進主線</strong></li>
+                <li><strong>README 單一資訊來源</strong>：網址、測試 URL、建置任務、分支規則（main／QC／Release）集中記錄，減少重複詢問，新成員可直接從文件上手</li>
+                <li><strong>First Principles 討論</strong>：找出假設 → 拆解問題 → 從根本建立解法，在跨職能溝通上取得共識</li>
+                <li><strong>跨系統自動化</strong>：GitLab Issue × Google Sheet 資料同步</li>
+            </ul>
+
+            <h4 class="sub-heading">未來方向：AI In Table &amp; Loop</h4>
+            <ul>
+                <li><strong>In Table</strong>：/plan-ppt-parser 將企劃 PPT 轉為 Markdown 開發計畫，不明確處逐項詢問，讓 AI 坐上討論桌</li>
+                <li><strong>In Loop</strong>：AI 寫 → AI Review → AI Commit，人在每個關卡負責確認</li>
+            </ul>
+        </div>
+
         <div class="leadership">
             <span class="section-label">Leadership</span>
             <h3 class="name">技術主管經驗</h3>
@@ -180,6 +205,11 @@
         <div class="portfolio">
             <span class="section-label">Portfolio</span>
             <h3 class="name">作品</h3>
+
+            <div class="btn">
+                <a class="works" href="./Richard_AI工作流作品集.pdf" target="_blank" rel="noopener">AI 工作流作品集</a>
+                <p><strong>從「AI 輔助人」到「人輔助 AI」：遊戲前端團隊的 AI 開發工作流設計與導入（經驗 Skill 化／人輔助 AI 開發／跨職能協作）</strong></p>
+            </div>
 
             <div class="btn">
                 <a class="works" href="https://github.com/Tzuhuanhsu/competitive-analysis/blob/main/SugarTeddy/SugarTeddy.pdf" target="_blank" rel="noopener">SLOT 競品分析報告</a>
@@ -247,6 +277,8 @@
                     <ul>
                         <li class="role">H5 遊戲開發處／開發一部部長</li>
                         <li>帶領團隊導入 AI Coding Agent，建立團隊的 AI 開發規範</li>
+                        <li>設計「人輔助 AI」工作流：/cocos-develop 開發總控、/ts-review 一鍵 Review → Commit、每日排程自動 Code Review</li>
+                        <li>與企劃訂定 AI 協作規範，並以 README 建立團隊單一資訊來源</li>
                         <li>協助品檢團隊建立 GitLab Issue 與 Google Sheet 整合自動化流程</li>
                         <li>1月　帶領團隊完成麻將 H5「啪麻雀」</li>
                         <li>1月　帶領團隊製作 H5 魚機「神話魚機」</li>
