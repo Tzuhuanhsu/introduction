@@ -142,9 +142,10 @@ a {
   white-space: nowrap;
 }
 
-.hero-proof li + li::before {
+/* 分隔點放在項目後面，換行時不會出現在行首 */
+.hero-proof li:not(:last-child)::after {
   content: "·";
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .hero-proof strong {
@@ -367,6 +368,11 @@ a {
 .ai-list span {
   color: var(--text-muted);
   font-size: 14px;
+}
+
+/* AI 使用治理：深色邊線，與一般成果區隔 */
+.ai-list li.ai-governance {
+  border-left-color: var(--text);
 }
 
 .ai-list li:last-child:nth-child(odd) {
@@ -680,7 +686,7 @@ a.work-card:hover {
     gap: 2px;
   }
 
-  .hero-proof li + li::before {
+  .hero-proof li:not(:last-child)::after {
     content: none;
   }
 
