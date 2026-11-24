@@ -269,17 +269,72 @@ a {
   grid-column: 1 / -1;
 }
 
+/* AI 導入成果：標準流程成果卡 */
+.ai-highlight {
+  background: #faf9f7;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin-bottom: 28px;
+}
+
+.ai-stats {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin: 8px 0 12px;
+}
+
+.ai-stats li {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ai-stats strong {
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+.ai-stats span {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.ai-highlight .note {
+  margin: 0;
+}
+
 /* AI 導入成果：單一成果清單 */
 .ai-list {
-  padding-left: 20px;
-  margin-bottom: 12px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 20px;
+  margin-bottom: 16px;
 }
 
+/* 每張小卡：標題一行、結果一句 */
 .ai-list li {
-  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 0 10px 14px;
+  border-left: 3px solid var(--brand);
 }
 
-.ai .note {
+.ai-list span {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.ai-list li:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
+.ai > .note {
   margin-bottom: 32px;
   font-size: 14px;
 }
@@ -597,6 +652,18 @@ a.work-card:hover {
   .summary-grid,
   .work-gallery {
     grid-template-columns: 1fr;
+  }
+
+  .ai-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ai-list {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-highlight {
+    padding: 16px;
   }
 
   .exp-row {
